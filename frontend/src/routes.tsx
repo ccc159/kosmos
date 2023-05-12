@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Exhibit from "./components/Exhibit";
-import { exhibitLoader } from "./loader";
+import Chatroom from "./components/Chatroom";
 
 const router = createBrowserRouter([
   {
@@ -9,8 +8,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/exhibit/:id",
-    element: <Exhibit />,
-    loader: exhibitLoader,
+    element: <Chatroom />,
   },
 ]);
 
