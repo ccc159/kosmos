@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
-import { onValue, ref } from '@firebase/database';
-import { addPiece, piecesRef } from './db';
+import { onValue } from '@firebase/database';
+import { piecesRef } from './db';
 
 function App() {
   const [pieces, setPieces] = useState<IPiece[]>([]);
