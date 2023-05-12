@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { usePiece } from '../db';
 import Exhibit from './Exhibit';
+import CommentBox from './CommentBox';
 
 export function ChatRoom() {
   const { id } = useParams();
@@ -12,7 +13,7 @@ export function ChatRoom() {
   return (
     <div className='flex flex-col w-full h-full'>
       <Exhibit piece={piece} />
-      <div>comments...</div>
+      <CommentBox piece={piece} />
     </div>
   );
 }
