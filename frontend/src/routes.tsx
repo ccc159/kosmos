@@ -1,9 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
+import Exhibit from "./components/Exhibit";
+import { exhibitLoader } from "./loader";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: null,
+  },
+  {
+    path: "/exhibit/:id",
+    element: <Exhibit />,
+    loader: exhibitLoader,
   },
 ]);
 
