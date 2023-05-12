@@ -1,4 +1,5 @@
 import { usePieces } from '../db';
+import { IPiece } from '../interfaces/piece';
 
 export function Home() {
   const pieces = usePieces();
