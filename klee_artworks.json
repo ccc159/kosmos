@@ -1,0 +1,579 @@
+{
+  "items": [
+    {
+      "id": "ef56295d-1795-4f81-a819-75bc5ed2b38d",
+      "name": "Red and White Domes",
+      "description": "A watercolor and body color painting on Japanese vellum mounted on cardboard, created in 1914. The painting measures 14.6 x 13.7 cm and is part of the Kunstsammlung Nordrhein-Westfalen in Dusseldorf.",
+      "comments": [
+        {
+          "id": "1d5f765a-273c-42b5-b128-19a5c90ef1af",
+          "created_at": "2023-05-12T14:30:00.000Z",
+          "content": "I don't see what the big deal is about Red and White Domes. It's just a bunch of shapes and colors. Where's the meaning?",
+          "author_display_name": "User 1",
+          "meta_data": {
+            "likes": 3,
+            "dislikes": 1
+          }
+        },
+        {
+          "id": "3448c115-9e6f-4ce4-bfea-2b05c2d697ca",
+          "parent_id": "1d5f765a-273c-42b5-b128-19a5c90ef1af",
+          "created_at": "2023-05-12T14:35:00.000Z",
+          "content": "While Red and White Domes may not have an explicit meaning or narrative, it's important to note that Klee was deeply interested in the relationship between color and form...",
+          "author_display_name": "Curator",
+          "meta_data": {
+            "likes": 6,
+            "dislikes": 0
+          }
+        },
+        {
+          "id": "5c33f7d5-5ab4-4af5-ba4a-7d4f4f12ca05",
+          "parent_id": "3448c115-9e6f-4ce4-bfea-2b05c2d697ca",
+          "created_at": "2023-05-12T14:40:00.000Z",
+          "content": "I agree with User 1. Red and White Domes seems too simplistic and minimalist to be interesting.",
+          "author_display_name": "User 2",
+          "meta_data": {
+            "likes": 0,
+            "dislikes": 4
+          }
+        },
+        {
+          "id": "a8c14dc6-f32a-4d7c-8f8a-fc2c868f6b05",
+          "parent_id": "5c33f7d5-5ab4-4af5-ba4a-7d4f4f12ca05",
+          "created_at": "2023-05-12T14:45:00.000Z",
+          "content": "It's true that Red and White Domes is a minimalist painting, but that doesn't mean it lacks complexity or depth...",
+          "author_display_name": "Curator",
+          "meta_data": {
+            "likes": 8,
+            "dislikes": 1
+          }
+        },
+        {
+          "id": "f8b8c2a5-2927-4e79-9b38-9d3dc3ccbe5e",
+          "parent_id": "a8c14dc6-f32a-4d7c-8f8a-fc2c868f6b05",
+          "created_at": "2023-05-12T14:50:00.000Z",
+          "content": "I understand the minimalist style of Red and White Domes, but I don't think that means it's lacking in meaning or emotion. The use of color and form can evoke different feelings in each viewer, which is part of the beauty of abstract art.",
+          "author_display_name": "User 3",
+          "meta_data": {
+            "likes": 5,
+            "dislikes": 0
+          }
+        },
+        {
+          "id": "db57524a-92d5-4a0e-a1ca-0e5f32dce3ef",
+          "parent_id": "f8b8c2a5-2927-4e79-9b38-9d3dc3ccbe5e",
+          "created_at": "2023-05-12T14:55:00.000Z",
+          "content": "I see what you mean, User 3. Personally, I find Red and White Domes to be a very calming and peaceful painting. The balance of red and white, along with the geometric shapes, creates a harmonious composition that feels restful to me.",
+          "author_display_name": "User 4",
+          "meta_data": {
+            "likes": 2,
+            "dislikes": 0
+          }
+        },
+        {
+          "id": "fa518bfe-fafe-4bde-9908-7e34d48c89f9",
+          "parent_id": "db57524a-92d5-4a0e-a1ca-0e5f32dce3ef",
+          "created_at": "2023-05-12T15:00:00.000Z",
+          "content": "It's interesting to hear how each person interprets Red and White Domes differently. That's one of the great things about abstract art – it can mean different things to different people. It allows for a wide range of emotions and experiences.",
+          "author_display_name": "Curator",
+          "meta_data": {
+            "likes": 4,
+            "dislikes": 0
+          }
+        }
+      ],
+      "author": "Paul Klee",
+      "date_of_creation": "1914-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Kunstsammlung Nordrhein-Westfalen, Dusseldorf"
+    },
+    {
+      "id": "dfc6d7d2-71f6-4c6d-a343-05a1fd444d10",
+      "name": "Remembrance of a Garden",
+      "description": "A watercolor painting on linen paper mounted on cardboard, created in 1914. The painting measures 25.2 x 21.5 cm and is part of the Kunstsammlung Nordrhein-Westfalen in Dusseldorf.",
+      "comments": [
+        {
+          "id": "c084e24a-8368-4f2e-9867-9d621bf79038",
+          "created_at": "2023-05-12T15:00:00.000Z",
+          "content": "What do you all think of Remembrance of a Garden by Paul Klee?",
+          "author_display_name": "User 1",
+          "meta_data": {
+            "likes": 3,
+            "dislikes": 0
+          }
+        },
+        {
+          "id": "6b9dc6b8-6a63-4298-94b2-dc97ef1a2a3d",
+          "parent_id": "c084e24a-8368-4f2e-9867-9d621bf79038",
+          "created_at": "2023-05-12T15:05:00.000Z",
+          "content": "I really love the use of geometric shapes in the painting. It creates a sense of order and structure that I find really appealing.",
+          "author_display_name": "User 2",
+          "meta_data": {
+            "likes": 5,
+            "dislikes": 1
+          }
+        },
+        {
+          "id": "fdabfd60-7409-4f9e-8d2f-3c14a102b3e3",
+          "parent_id": "6b9dc6b8-6a63-4298-94b2-dc97ef1a2a3d",
+          "created_at": "2023-05-12T15:10:00.000Z",
+          "content": "I agree, the use of geometry is really interesting. It reminds me of Klee's background in Bauhaus and his interest in abstraction.",
+          "author_display_name": "User 3",
+          "meta_data": {
+            "likes": 2,
+            "dislikes": 0
+          }
+        },
+        {
+          "id": "e0ec6f94-6d88-4a9f-a9d5-883cf26f9293",
+          "parent_id": "c084e24a-8368-4f2e-9867-9d621bf79038",
+          "created_at": "2023-05-12T15:15:00.000Z",
+          "content": "I'm not really a fan of the colors in the painting. They seem a bit too muted and don't really grab my attention.",
+          "author_display_name": "User 4",
+          "meta_data": {
+            "likes": 0,
+            "dislikes": 4
+          }
+        },
+        {
+          "id": "e2f97e1b-07eb-4dbd-9d3c-8b3a9c7d4f4c",
+          "parent_id": "e0ec6f94-6d88-4a9f-a9d5-883cf26f9293",
+          "created_at": "2023-05-12T15:20:00.000Z",
+          "content": "I see what you mean about the colors, but I think that's intentional. Klee often used muted colors to create a sense of tranquility and introspection in his paintings.",
+          "author_display_name": "User 5",
+          "meta_data": {
+            "likes": 3,
+            "dislikes": 1
+          }
+        },
+        {
+          "id": "13b27625-4c4b-4a0a-84cc-50e6d8ed97c2",
+          "created_at": "2023-05-12T12:00:00Z",
+          "content": "I absolutely love the vibrant colors in this piece. It's so lively and reminds me of a beautiful garden in full bloom.",
+          "author_display_name": "GardenEnthusiast",
+          "meta_data": {
+            "likes": 10,
+            "dislikes": 0
+          }
+        },
+        {
+          "id": "20c48e0d-6b13-4490-aa6f-1ca3dc27d2d2",
+          "parent_id": "13b27625-4c4b-4a0a-84cc-50e6d8ed97c2",
+          "created_at": "2023-05-12T12:05:00Z",
+          "content": "@GardenEnthusiast I agree! The colors are so bold and really capture the essence of a garden. Do you have a favorite part of the painting?",
+          "author_display_name": "ArtLover101",
+          "meta_data": {
+            "likes": 7,
+            "dislikes": 1
+          }
+        },
+        {
+          "id": "89c43c2e-0336-4a6a-92d3-d87ab888c10f",
+          "parent_id": "20c48e0d-6b13-4490-aa6f-1ca3dc27d2d2",
+          "created_at": "2023-05-12T12:10:00Z",
+          "content": "@ArtLover101 Yes! I love the little pops of yellow and orange throughout the painting. They really add to the overall brightness of the piece.",
+          "author_display_name": "SunflowerSoul",
+          "meta_data": {
+            "likes": 5,
+            "dislikes": 0
+          }
+        },
+        {
+          "id": "3f6b4d4e-61a4-4a1c-94e3-c3b67a0c1dd8",
+          "created_at": "2023-05-12T12:15:00Z",
+          "content": "I actually find the composition of the painting to be a bit jarring. The colors are nice, but the placement of the shapes seems random and disjointed.",
+          "author_display_name": "ArtCritique",
+          "meta_data": {
+            "likes": 2,
+            "dislikes": 6
+          }
+        },
+        {
+          "id": "f3df90c7-1a47-4bc7-a94b-ba1c015a9d9e",
+          "parent_id": "3f6b4d4e-61a4-4a1c-94e3-c3b67a0c1dd8",
+          "created_at": "2023-05-12T12:20:00Z",
+          "content": "@ArtCritique I can see where you're coming from, but I actually appreciate the abstract composition. It adds a sense of spontaneity and movement to the piece.",
+          "author_display_name": "ModernArtFan",
+          "meta_data": {
+            "likes": 8,
+            "dislikes": 4
+          }
+        }
+      ],
+      "author": "Paul Klee",
+      "date_of_creation": "1914-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Kunstsammlung Nordrhein-Westfalen, Dusseldorf"
+    },
+    {
+      "id": "a1944f4e-4d4f-4bb7-bef4-5f90a1a26a85",
+      "name": "Southern (Tunisian) Gardens",
+      "description": "A watercolor painting by Paul Klee, created in 1919. The painting measures 9.5 x 7.5 in and is part of the Collection Heinz Berggruen in Paris.",
+      "comments": [
+        {
+            "id": "40c369c6-935d-44f2-b2c5-5ee1f2e5f5d5",
+            "created_at": "2023-05-12T16:30:00Z",
+            "content": "I absolutely love the use of colors in this piece.",
+            "author_display_name": "ArtLover72",
+            "meta_data": {
+                "likes": 7,
+                "dislikes": 1
+            }
+        },
+        {
+            "id": "8b4b4f3e-b4f7-4bcb-bcea-7a24cb6162b9",
+            "parent_id": "40c369c6-935d-44f2-b2c5-5ee1f2e5f5d5",
+            "created_at": "2023-05-12T16:35:00Z",
+            "content": "I agree, the colors are so vibrant and really evoke the feeling of being in a lush garden.",
+            "author_display_name": "GardenEnthusiast",
+            "meta_data": {
+                "likes": 5,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "e1d9ab5e-5f5d-4648-82e1-5f5e5e5d5d5d",
+            "parent_id": "8b4b4f3e-b4f7-4bcb-bcea-7a24cb6162b9",
+            "created_at": "2023-05-12T16:40:00Z",
+            "content": "I also love how the shapes in the painting almost look like puzzle pieces that fit together perfectly.",
+            "author_display_name": "ShapeLover99",
+            "meta_data": {
+                "likes": 3,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "0f7d8b05-30c1-4f23-9356-1f50eb4f6e62",
+            "created_at": "2023-05-12T16:45:00Z",
+            "content": "I appreciate the use of shapes and colors, but overall I find the composition to be a bit confusing and disorienting.",
+            "author_display_name": "CriticalEye",
+            "meta_data": {
+                "likes": 1,
+                "dislikes": 6
+            }
+        },
+        {
+            "id": "fc0c8e0e-04c7-42a9-a9d3-fd464dbb930c",
+            "parent_id": "0f7d8b05-30c1-4f23-9356-1f50eb4f6e62",
+            "created_at": "2023-05-12T16:50:00Z",
+            "content": "I can see what you mean, but I think that's part of the beauty of the piece. It's not meant to be a literal representation of a garden, but rather a surreal interpretation of one.",
+            "author_display_name": "SurrealistFan",
+            "meta_data": {
+                "likes": 4,
+                "dislikes": 1
+            }
+        },
+        {
+            "id": "54b6d5c7-14e6-4f6b-a00e-5f6a3b3c2b81",
+            "parent_id": null,
+            "created_at": "2023-05-13T08:15:00.000Z",
+            "content": "Wow, this piece is so vibrant and colorful. I love how the different shapes and patterns come together.",
+            "author_display_name": "Sarah W.",
+            "author_id": "3c8cfab2-2d03-4a9a-8e36-071db203e005",
+            "meta_data": {
+                "likes": 7,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "71e1d0d7-baf8-48e7-a69d-30d9ee2b0e62",
+            "parent_id": "54b6d5c7-14e6-4f6b-a00e-5f6a3b3c2b81",
+            "created_at": "2023-05-13T10:22:00.000Z",
+            "content": "Yes, the use of color and pattern is really striking in this piece. It's like the gardens are coming to life.",
+            "author_display_name": "Maria L.",
+            "author_id": "28d13512-59a8-4f77-a9d9-40b65982641f",
+            "meta_data": {
+                "likes": 3,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "354ee170-7bf5-4b94-84c5-6f8f6a4059b9",
+            "parent_id": "71e1d0d7-baf8-48e7-a69d-30d9ee2b0e62",
+            "created_at": "2023-05-13T12:30:00.000Z",
+            "content": "I agree, the patterns really draw the viewer in. It's interesting to see how Klee uses a mix of organic and geometric shapes.",
+            "author_display_name": "John D.",
+            "author_id": "b8e97e1c-aaef-4a26-8326-259b49e50c70",
+            "meta_data": {
+                "likes": 4,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "47d7d91c-b62e-49b5-9580-c7d9bb042ee2",
+            "parent_id": null,
+            "created_at": "2023-05-13T14:45:00.000Z",
+            "content": "I don't really see the appeal in this piece. It just looks like a jumble of colors and shapes to me.",
+            "author_display_name": "Mark R.",
+            "author_id": "92f350b8-8dc1-48d9-bef9-9e20363686f6",
+            "meta_data": {
+                "likes": 1,
+                "dislikes": 2
+            }
+        }
+    ],
+	  "author": "Paul Klee",
+      "date_of_creation": "1919-01-01T00:00:00Z",
+      "owner": "Collection Heinz Berggruen",
+      "location": "Paris"
+    },
+    {
+      "id": "baf4e4e8-7872-4fa2-a137-725e0197b8a3",
+      "name": "Dream City",
+      "description": "A watercolor and oil painting by Paul Klee, created in 1921. The painting measures 18 7/8 x 12 1/4 in and is part of a private collection in Turin.",
+      "comments": [
+        {
+            "id": "8a657e48-7a5d-4b3c-8aa5-5c7b75a4a08a",
+            "parent_id": null,
+            "created_at": "2023-05-12T13:45:22.000Z",
+            "content": "I really love the use of color in this piece! The bold, contrasting shades really make the buildings stand out.",
+            "author_display_name": "artlover32",
+            "author_id": "d846893d-8c32-49b1-9b9f-f74d8373a3ba",
+            "meta_data": {
+                "likes": 25,
+                "dislikes": 1
+            }
+        },
+        {
+            "id": "725f3d14-fd0f-4616-b981-6c0b6c0d2e64",
+            "parent_id": "8a657e48-7a5d-4b3c-8aa5-5c7b75a4a08a",
+            "created_at": "2023-05-12T14:02:18.000Z",
+            "content": "I agree, the use of color in Dream City is really amazing. Klee was able to create a sense of vibrancy and energy through the colors he chose.",
+            "author_display_name": "colorsarelife",
+            "author_id": "e0f1de06-9871-465c-9c51-c10b8cd49f1e",
+            "meta_data": {
+                "likes": 12,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "d0fa1de5-5c5e-4d3a-9b47-41b78c4f4fb4",
+            "parent_id": null,
+            "created_at": "2023-05-12T15:20:42.000Z",
+            "content": "I don't really see what all the fuss is about. The colors are too bright and the composition is too chaotic. I much prefer Klee's more subdued works.",
+            "author_display_name": "artcritic12",
+            "author_id": "17b654d6-15e6-4e37-8fbb-9d6b9f6d16f6",
+            "meta_data": {
+                "likes": 2,
+                "dislikes": 20
+            }
+        },
+        {
+            "id": "e31e5ba5-1664-4a4e-ba12-cdd24bba9a9d",
+            "parent_id": "d0fa1de5-5c5e-4d3a-9b47-41b78c4f4fb4",
+            "created_at": "2023-05-12T15:45:01.000Z",
+            "content": "I disagree. The use of color in Dream City is precisely what makes it such a fascinating piece. The bold and bright colors are part of the composition's unique charm.",
+            "author_display_name": "colorfuldebate",
+            "author_id": "7f5dc104-5d7c-464d-b63b-21119b2f1f22",
+            "meta_data": {
+                "likes": 8,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "4c55b7c5-1e22-4af8-bb11-3f3a2e3c5835",
+            "parent_id": "",
+            "created_at": "2023-05-12T12:30:45Z",
+            "content": "I love the whimsical nature of Dream City, it reminds me of a fairytale world!",
+            "author_display_name": "Alice",
+            "meta_data": {
+                "likes": 12,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "c6fbb56e-8c6c-47d7-9c10-eb7f8e85d870",
+            "parent_id": "4c55b7c5-1e22-4af8-bb11-3f3a2e3c5835",
+            "created_at": "2023-05-12T12:35:22Z",
+            "content": "I agree, Dream City feels like a place straight out of a storybook. I love the playful use of color and shapes.",
+            "author_display_name": "Bob",
+            "meta_data": {
+                "likes": 8,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "0725b5d5-11c5-4e9f-98b1-d227b1de13c4",
+            "parent_id": "4c55b7c5-1e22-4af8-bb11-3f3a2e3c5835",
+            "created_at": "2023-05-12T12:45:11Z",
+            "content": "I see what you mean, but I feel like Dream City is a bit too chaotic and overwhelming for my taste. It almost feels like Klee threw everything but the kitchen sink into this painting.",
+            "author_display_name": "Claire",
+            "meta_data": {
+                "likes": 3,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "3f3f9323-0365-4d2d-af91-d5e3e5ab43b5",
+            "parent_id": "0725b5d5-11c5-4e9f-98b1-d227b1de13c4",
+            "created_at": "2023-05-12T13:02:09Z",
+            "content": "I see what you mean, Claire, but I think the chaos is intentional. Klee was interested in the idea of creating a sense of movement and energy within his paintings, and Dream City is a great example of that.",
+            "author_display_name": "David",
+            "meta_data": {
+                "likes": 5,
+                "dislikes": 0
+            }
+        }
+    ],
+	  "author": "Paul Klee",
+      "date_of_creation": "1921-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Turin"
+    },
+    {
+      "id": "4b2f6a8c-7f2b-4f44-8bb1-6a50c43ca91a",
+      "name": "Ancient Sound, Abstract on Black",
+      "description": "An oil painting by Paul Klee, created in 1925. The painting measures 15 x 15 in and is part of the Kunstsammlung in Basel.",
+      "comments": [
+        {
+            "id": "3e547193-4218-42bf-88f9-48b9421d72c8",
+            "created_at": "2022-08-10T10:30:00Z",
+            "content": "I love the use of black in this piece. It creates a feeling of depth and mystery.",
+            "author_display_name": "ArtLover123",
+            "meta_data": {
+                "likes": 10,
+                "dislikes": 2
+            }
+        },
+        {
+            "id": "d2185d25-bdc8-468f-8577-15b4315f5cf5",
+            "parent_id": "3e547193-4218-42bf-88f9-48b9421d72c8",
+            "created_at": "2022-08-11T09:00:00Z",
+            "content": "I agree, the black really draws you in. It's like you're being pulled into another dimension.",
+            "author_display_name": "MysterySeeker",
+            "meta_data": {
+                "likes": 8,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "5c5d5b69-5c33-4413-9154-b4c12ad71f1d",
+            "parent_id": "d2185d25-bdc8-468f-8577-15b4315f5cf5",
+            "created_at": "2022-08-11T14:30:00Z",
+            "content": "I don't know if I agree. I find the black to be oppressive and depressing.",
+            "author_display_name": "SadSoul",
+            "meta_data": {
+                "likes": 4,
+                "dislikes": 6
+            }
+        },
+        {
+            "id": "b6c28bc9-ecf6-4d6e-8c25-bf70366b63e2",
+            "parent_id": "5c5d5b69-5c33-4413-9154-b4c12ad71f1d",
+            "created_at": "2022-08-12T08:15:00Z",
+            "content": "I understand how you feel, but I think that's part of the beauty of this piece. It's meant to evoke a range of emotions, not just happiness.",
+            "author_display_name": "ArtCurator",
+            "meta_data": {
+                "likes": 9,
+                "dislikes": 1
+            }
+        },
+        {
+            "id": "864cdd37-0e02-4e9e-b56c-42c0d3cb3fb3",
+            "created_at": "2022-08-13T16:45:00Z",
+            "content": "I don't think the black is the only thing that makes this piece interesting. The abstract shapes and patterns are also fascinating.",
+            "author_display_name": "AbstractionFan",
+            "meta_data": {
+                "likes": 6,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "9f9ac4b2-4f4e-4e3a-8bfe-8541e07d71e7",
+            "created_at": "2022-05-14T09:24:32Z",
+            "content": "I love the way Klee uses black in this piece, it's so unique!",
+            "author_display_name": "ArtLover123",
+            "author_id": "d734452a-3dd9-437d-a5bb-69d496e8c558",
+            "meta_data": {
+                "likes": 15,
+                "dislikes": 2
+            }
+        },
+        {
+            "id": "41dc091c-c1c8-4289-9c77-ee01fb0cc68b",
+            "parent_id": "9f9ac4b2-4f4e-4e3a-8bfe-8541e07d71e7",
+            "created_at": "2022-05-15T12:50:18Z",
+            "content": "@ArtLover123 Yes, the use of black is really interesting in this piece. It almost feels like the colors are coming out of the black, rather than being put on top of it.",
+            "author_display_name": "ModernArtEnthusiast",
+            "author_id": "6d90f6bb-00ec-452d-b28d-21a0c5f8a05b",
+            "meta_data": {
+                "likes": 8,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "9bae7b38-2b48-40b8-a501-05c7d83d928f",
+            "parent_id": "41dc091c-c1c8-4289-9c77-ee01fb0cc68b",
+            "created_at": "2022-05-16T17:22:07Z",
+            "content": "@ModernArtEnthusiast It's almost like the black is a canvas itself, and the colors are emerging from within it. It really gives a sense of depth to the painting.",
+            "author_display_name": "AbstractArtFan",
+            "author_id": "c3d3ca61-8447-4c47-a372-d2e9b4a4a463",
+            "meta_data": {
+                "likes": 5,
+                "dislikes": 0
+            }
+        },
+        {
+            "id": "6348a79d-69f2-4655-97f2-8a52a56a3d3f",
+            "created_at": "2022-05-17T08:10:52Z",
+            "content": "I'm not really a fan of this one. It feels too abstract for me.",
+            "author_display_name": "Realismlover",
+            "author_id": "2a6d9e89-4a1f-4c80-98f4-63a57935c56a",
+            "meta_data": {
+                "likes": 1,
+                "dislikes": 12
+            }
+        }
+    ],
+	  "author": "Paul Klee",
+      "date_of_creation": "1925-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Basel"
+    },
+    {
+      "id": "29441c60-9fc9-4e50-ae49-24c32e95f2e1",
+      "name": "Highway and Byways",
+      "description": "An oil painting by Paul Klee, created in 1929. The painting measures 32 5/8 x 26 3/8 in and is part of the collection of Christoph and Andreas Vowinckel.",
+      "author": "Paul Klee",
+      "date_of_creation": "1929-01-01T00:00:00Z",
+      "owner": "Christoph and Andreas Vowinckel",
+      "location": ""
+    },
+    {
+      "id": "b1819376-c95a-4db5-b5b8-3157d48d0de6",
+      "name": "Southern Gardens",
+      "description": "An oil painting by Paul Klee, created in 1936. The painting measures 10 3/8 x 12 1/4 in and is part of the collection of Norman Granz in Geneva.",
+      "author": "Paul Klee",
+      "date_of_creation": "1936-01-01T00:00:00Z",
+      "owner": "Norman Granz",
+      "location": "Geneva"
+    },
+    {
+      "id": "96a405a4-1f7d-4da8-94d7-75f9e26119a6",
+      "name": "Legend of the Nile",
+      "description": "A pastel painting by Paul Klee, created in 1937. The painting measures 69 x 61 cm (27 1/8 x 24 in) and is made on cotton cloth mounted on burlap. It is currently part of the collection of Kunstmuseum Bern.",
+      "author": "Paul Klee",
+      "date_of_creation": "1937-01-01T00:00:00Z",
+      "owner": "Kunstmuseum Bern",
+      "location": ""
+    },
+    {
+      "id": "b4e5ddaa-eec8-4d22-9e68-27a9ca0cc8e2",
+      "name": "Insula Dulcamara",
+      "description": "An oil painting by Paul Klee, created in 1938. The painting measures 31 1/2 x 69 in and is made on newsprint mounted on burlap. It is part of the Klee Foundation's collection in Bern.",
+      "author": "Paul Klee",
+      "date_of_creation": "1938-01-01T00:00:00Z",
+      "owner": "Klee Foundation",
+      "location": "Bern"
+    },
+    {
+      "id": "d33161a9-f9f9-471e-81f7-51e33c59cb81",
+      "name": "Park of _idols",
+      "description": "A watercolor painting by Paul Klee, created in 1939. The painting measures 14 x 8 1/4 in and is made on blackened paper. It is part of the Felix Klee collection in Bern.",
+      "author": "Paul Klee",
+      "date_of_creation": "1939-01-01T00:00:00Z",
+      "owner": "Felix Klee",
+      "location": "Bern"
+    }
+  ]
+}
