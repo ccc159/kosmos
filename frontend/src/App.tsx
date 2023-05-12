@@ -1,3 +1,4 @@
+import CommentBox from './components/CommentBox';
 import Layout from './components/Layout';
 import { usePieces } from './db';
 
@@ -6,6 +7,7 @@ function App() {
 
   return (
     <Layout>
+      <CommentBox pieceId='chen'/>
       <div></div>
       <h1>Vite + React</h1>
       <div className='card'>

@@ -8,4 +8,5 @@ interface IComment {
   author_id?: string; // guid
   likes: number;
   dislikes: number;
+  innerComments?: {[key: string]: IComment}
 }
