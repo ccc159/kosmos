@@ -3,22 +3,27 @@ import { IPiece } from "../interfaces/piece";
 
 const containerVariants = {
   initial: {
-    height: "70vh",
+    position: "relative",
+    height: "60vh",
     width: "100vw",
     flexDirection: "column",
     maxHeight: "100%",
     padding: 0,
+    paddingTop: 0,
     marginTop: 0,
+    marginBottom: "7rem",
     marginHorizontal: 0,
   },
   animate: {
-    // position: "absolute",
+    position: "fixed",
+    top: 0,
     height: "25vh",
     width: "100%",
     flexDirection: "row",
     maxHeight: "50%",
     padding: "1rem",
-    marginTop: "2rem",
+    paddingTop: "2rem",
+    marginBottom: 0,
     gap: "1rem",
   },
 };
@@ -29,8 +34,8 @@ const imageVariants = {
 };
 
 const listVariants = {
-  initial: { fontSize: "1rem" },
-  animate: { fontSize: "0.75rem" },
+  initial: { fontSize: "1rem", paddingLeft: "1rem" },
+  animate: { fontSize: "0.75rem", paddingLeft: 0 },
 };
 
 interface ExhibitProps {
@@ -41,7 +46,7 @@ interface ExhibitProps {
 export default function Exhibit({ piece, extended }: ExhibitProps) {
   return (
     <motion.div
-      className='flex flex-col h-full'
+      className='flex flex-col h-full bg-white z-30'
       variants={containerVariants}
       initial={extended ? "animate" : "initial"}
       animate={extended ? "initial" : "animate"}
@@ -54,7 +59,7 @@ export default function Exhibit({ piece, extended }: ExhibitProps) {
         animate={extended ? "initial" : "animate"}
       />
       <motion.div
-        className='flex flex-col font-montserrat'
+        className='flex flex-col h-full font-montserrat'
         variants={listVariants}
         initial={extended ? "animate" : "initial"}
         animate={extended ? "initial" : "animate"}

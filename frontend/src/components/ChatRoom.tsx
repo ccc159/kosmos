@@ -6,13 +6,18 @@ import Exhibit from "./Exhibit";
 import { usePiece } from "../db";
 import CommentBox from "./CommentBox";
 
+const variants = {
+  initial: { paddingTop: 0 },
+  animate: { paddingTop: "50vh" },
+};
+
 export function ChatRoom() {
   const { id } = useParams();
   const [extended, setExtended] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         setExtended(false);
       } else {
         setExtended(true);
@@ -35,6 +40,12 @@ export function ChatRoom() {
     >
       <Exhibit piece={piece} extended={extended} />
       {/* <button onClick={() => setExtended(!extended)}>EXTEND</button> */}
+      {/* <motion.div
+        variants={variants}
+        initial={extended ? "animate" : "initial"}
+        animate={extended ? "initial" : "animate"}
+      ></motion.div> */}
+      {!extended && <div className='flex w-screen h-[50vh] bg-white' />}
       <CommentBox piece={piece} />
     </motion.div>
   );
