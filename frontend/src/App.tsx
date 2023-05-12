@@ -1,16 +1,8 @@
-import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
-import { onValue } from '@firebase/database';
-import { piecesRef } from './db';
+import { usePieces } from './db';
 
 function App() {
-  const [pieces, setPieces] = useState<IPiece[]>([]);
-
-  useEffect(() => {
-    onValue(piecesRef, (snapshot) => {
-      setPieces(Object.values(snapshot.val()));
-    });
-  }, []);
+  const pieces = usePieces();
 
   return (
     <Layout>
