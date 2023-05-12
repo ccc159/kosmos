@@ -1,5 +1,5 @@
-import React from "react";
-import { motion, AnimatePresence, Variants } from "framer-motion";
+import React from 'react';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 
 // import Footer from "./Footer";
 // import Navbar from "./Navbar";
@@ -17,17 +17,13 @@ const variants: Variants = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      {/* <Navbar /> */}
-      <AnimatePresence>
-        <motion.main
-          variants={variants}
-          initial='initial'
-          animate='animate'
-          exit='exit'
-        >
-          <div className='flex flex-col w-screen h-screen'>{children}</div>
-        </motion.main>
-      </AnimatePresence>
+      <div className='main-container'>
+        <AnimatePresence>
+          <motion.main variants={variants} initial='initial' animate='animate' exit='exit'>
+            {children}
+          </motion.main>
+        </AnimatePresence>
+      </div>
       {/* <Footer /> */}
     </>
   );
