@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "f81bc682-85b3-48e4-b340-6c147ee5475c",
+      "name": "The Twittering Machine",
+      "description": "A watercolor and ink transfer painting created by Paul Klee in 1922. The painting measures 63.5 x 48.3 cm and is part of the collection of the Museum of Modern Art in New York.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1922-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Museum of Modern Art, New York"
+    },
+    {
+      "id": "dfc6d7d2-71f6-4c6d-a343-05a1fd444d10",
+      "name": "Remembrance of a Garden",
+      "description": "A watercolor painting on linen paper mounted on cardboard, created in 1914. The painting measures 25.2 x 21.5 cm and is part of the Kunstsammlung Nordrhein-Westfalen in Dusseldorf.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1914-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Kunstsammlung Nordrhein-Westfalen, Dusseldorf"
+    },
+    {
+      "id": "a1944f4e-4d4f-4bb7-bef4-5f90a1a26a85",
+      "name": "Southern (Tunisian) Gardens",
+      "description": "A watercolor painting by Paul Klee, created in 1919. The painting measures 9.5 x 7.5 in and is part of the Collection Heinz Berggruen in Paris.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1919-01-01T00:00:00Z",
+      "owner": "Collection Heinz Berggruen",
+      "location": "Paris"
+    },
+    {
+      "id": "baf4e4e8-7872-4fa2-a137-725e0197b8a3",
+      "name": "Dream City",
+      "description": "A watercolor and oil painting by Paul Klee, created in 1921. The painting measures 18 7/8 x 12 1/4 in and is part of a private collection in Turin.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1921-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Turin"
+    },
+    {
+      "id": "4b2f6a8c-7f2b-4f44-8bb1-6a50c43ca91a",
+      "name": "Ancient Sound, Abstract on Black",
+      "description": "An oil painting by Paul Klee, created in 1925. The painting measures 15 x 15 in and is part of the Kunstsammlung in Basel.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1925-01-01T00:00:00Z",
+      "owner": "",
+      "location": "Basel"
+    },
+    {
+      "id": "29441c60-9fc9-4e50-ae49-24c32e95f2e1",
+      "name": "Highway and Byways",
+      "description": "An oil painting by Paul Klee, created in 1929. The painting measures 32 5/8 x 26 3/8 in and is part of the collection of Christoph and Andreas Vowinckel.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1929-01-01T00:00:00Z",
+      "owner": "Christoph and Andreas Vowinckel",
+      "location": ""
+    },
+    {
+      "id": "b1819376-c95a-4db5-b5b8-3157d48d0de6",
+      "name": "Southern Gardens",
+      "description": "An oil painting by Paul Klee, created in 1936. The painting measures 10 3/8 x 12 1/4 in and is part of the collection of Norman Granz in Geneva.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1936-01-01T00:00:00Z",
+      "owner": "Norman Granz",
+      "location": "Geneva"
+    },
+    {
+      "id": "96a405a4-1f7d-4da8-94d7-75f9e26119a6",
+      "name": "Legend of the Nile",
+      "description": "A pastel painting by Paul Klee, created in 1937. The painting measures 69 x 61 cm (27 1/8 x 24 in) and is made on cotton cloth mounted on burlap. It is currently part of the collection of Kunstmuseum Bern.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1937-01-01T00:00:00Z",
+      "owner": "Kunstmuseum Bern",
+      "location": ""
+    },
+    {
+      "id": "b4e5ddaa-eec8-4d22-9e68-27a9ca0cc8e2",
+      "name": "Insula Dulcamara",
+      "description": "An oil painting by Paul Klee, created in 1938. The painting measures 31 1/2 x 69 in and is made on newsprint mounted on burlap. It is part of the Klee Foundation's collection in Bern.",
+      "image_data": "<base64-encoded image data>",
+      "author": "Paul Klee",
+      "date_of_creation": "1938-01-01T00:00:00Z",
+      "owner": "Klee Foundation",
+      "location": "Bern"
+    }
+  ]
+}
