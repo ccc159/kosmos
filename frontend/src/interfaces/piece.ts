@@ -1,10 +1,12 @@
-interface IPiece {
+import { IComment } from './comment';
+
+export interface IPiece {
   id: string; // guid
   name: string;
   description: string;
-  image_data: string;
   author: string;
-  date_of_creation: Date;
+  date_of_creation: string;
   owner: string;
   location: string;
+  comments: IComment[];
 }
