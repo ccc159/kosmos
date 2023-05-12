@@ -9,15 +9,17 @@ const containerVariants = {
     maxHeight: "100%",
     padding: 0,
     marginTop: 0,
+    marginHorizontal: 0,
   },
   animate: {
     // position: "absolute",
-    height: "35vh",
+    height: "25vh",
     width: "100%",
     flexDirection: "row",
     maxHeight: "50%",
     padding: "1rem",
     marginTop: "2rem",
+    gap: "1rem",
   },
 };
 
@@ -27,8 +29,8 @@ const imageVariants = {
 };
 
 const listVariants = {
-  initial: {},
-  animate: {},
+  initial: { fontSize: "1rem" },
+  animate: { fontSize: "0.75rem" },
 };
 
 interface ExhibitProps {
@@ -51,8 +53,13 @@ export default function Exhibit({ piece, extended }: ExhibitProps) {
         initial={extended ? "animate" : "initial"}
         animate={extended ? "initial" : "animate"}
       />
-      <motion.div className='flex flex-col' variants={listVariants}>
-        <h1>{piece.name}</h1>
+      <motion.div
+        className='flex flex-col font-montserrat'
+        variants={listVariants}
+        initial={extended ? "animate" : "initial"}
+        animate={extended ? "initial" : "animate"}
+      >
+        <h1 className='font-bold'>{piece.name}</h1>
         <h2>
           {piece.author}, 1928, {piece?.owner}
         </h2>
