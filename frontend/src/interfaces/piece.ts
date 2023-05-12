@@ -5,7 +5,7 @@ export interface IPiece {
   name: string;
   description: string;
   author: string;
-  date_of_creation: Date;
+  date_of_creation: string;
   owner: string;
   location: string;
   comments: IComment[];
