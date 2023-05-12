@@ -2,6 +2,7 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase, onValue, push, ref, set } from 'firebase/database';
 import { useEffect, useState } from 'react';
+import { IPiece } from './interfaces/piece';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
