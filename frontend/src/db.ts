@@ -21,7 +21,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export const piecesRef = ref(getDatabase(app), "pieces");
+export const piecesRef = ref(getDatabase(app), "/");
 
 export const addPiece = (piece: IPiece) => {
   const newPieceRef = push(piecesRef);

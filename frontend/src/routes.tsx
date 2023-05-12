@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Chatroom from "./components/Chatroom";
+import ExhibitPage from "./components/ExhibitPage";
 
 const router = createBrowserRouter([
   {
@@ -8,7 +8,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/exhibit/:id",
-    element: <Chatroom />,
+    element: <ExhibitPage />,
   },
 ]);
 

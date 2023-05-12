@@ -20,3 +20,7 @@ export type IComment = {
   likes: number;
   dislikes: number;
 };
+
+export interface Firebase<T> {
+  data: T;
+}
