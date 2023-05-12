@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import { IPiece } from "../types";
 
-export default function Exhibit(data: IPiece) {
+type ExhibitProps = {
+  data: IPiece;
+};
+
+export default function Exhibit({ data }: ExhibitProps) {
+  console.log(data);
   return data ? (
     <div className='flex flex-col w-full h-[60%]'>
       <motion.img src={data?.image_data} className='w-full h-full' />
