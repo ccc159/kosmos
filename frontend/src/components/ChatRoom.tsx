@@ -1,24 +1,18 @@
-import { useEffect, useState } from "react";
-import { onValue } from "firebase/database";
-import { useParams } from "react-router-dom";
-
-import { piecesRef } from "../db";
-import { IPiece } from "../types";
-import Exhibit from "./Exhibit";
+import { useParams } from 'react-router-dom';
+import { usePiece } from '../db';
+import Exhibit from './Exhibit';
 
 export function ChatRoom() {
   const { id } = useParams();
-  const [exhibits, setExhibits] = useState<IPiece[]>([]);
 
-  useEffect(() => {
-    onValue(piecesRef, (snapshot) => {
-      setExhibits(snapshot.val());
-    });
-  }, []);
+  const piece = usePiece(id as string);
+
+  if (!piece) return <p>Piece not found</p>;
 
   return (
     <div className='flex flex-col w-full h-full'>
-      {exhibits[id] && <Exhibit data={exhibits[id]} />}
+      <Exhibit piece={piece} />
+      <div>comments...</div>
     </div>
   );
 }

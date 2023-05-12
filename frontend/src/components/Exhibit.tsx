@@ -1,20 +1,15 @@
-import { motion } from "framer-motion";
-import { IPiece } from "../types";
+import { motion } from 'framer-motion';
+import { IPiece } from '../interfaces/piece';
 
-type ExhibitProps = {
-  data: IPiece;
-};
-
-export default function Exhibit({ data }: ExhibitProps) {
-  console.log(data);
-  return data ? (
+export default function Exhibit({ piece }: { piece: IPiece }) {
+  return (
     <div className='flex flex-col w-full h-[60%]'>
-      <motion.img src={data?.image_data} className='w-full h-full' />
-      <h1>{data?.name}</h1>
+      <motion.img src={`../pieces/${piece.id}.jpg`} className='w-full h-full' />
+      <h1>{piece.name}</h1>
       <h2>
-        {data?.author}, 1928, {data?.owner}
+        {piece.author}, 1928, {piece?.owner}
       </h2>
-      <h2>{data?.location}</h2>
+      <h2>{piece.location}</h2>
     </div>
-  ) : null;
+  );
 }
