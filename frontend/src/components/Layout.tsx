@@ -25,7 +25,7 @@ export default function Layout({ children }: LayoutProps) {
           animate='animate'
           exit='exit'
         >
-          {children}
+          <div className='flex flex-col w-screen h-screen'>{children}</div>
         </motion.main>
       </AnimatePresence>
       {/* <Footer /> */}

@@ -1,23 +1,27 @@
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { onValue } from "firebase/database";
+import { useParams } from "react-router-dom";
 
 import { piecesRef } from "../db";
 import { IPiece } from "../types";
+import Exhibit from "./Exhibit";
+import Chat from "./Chat";
 
 export default function Chatroom() {
-  const [pieces, setPieces] = useState<IPiece[]>([]);
+  const { id } = useParams();
+  const [exhibits, setExhibits] = useState<IPiece[]>([]);
 
   useEffect(() => {
     onValue(piecesRef, (snapshot) => {
-      setPieces(Object.values(snapshot.val()));
+      const items = Object.values(snapshot.val());
+      setExhibits(items);
     });
-  }, []);
+  }, [id]);
 
   return (
-    <div className='flex'>
-      <div className='flex'></div>
-      {/* <motion.image></motion.image> */}
+    <div className='flex flex-col w-full h-full'>
+      <Exhibit data={exhibits.find((x) => x.id === id)} />
+      <Chat />
     </div>
   );
 }
