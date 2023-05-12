@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import { piecesRef } from "../db";
 import { Firebase, IPiece } from "../types";
 import Exhibit from "./Exhibit";
-import Chat from "./Comments";
 
 export default function ExhibitPage() {
   const { id } = useParams();
@@ -25,7 +24,6 @@ export default function ExhibitPage() {
   return (
     <div className='flex flex-col w-full h-full'>
       {exhibit ? <Exhibit data={exhibit} /> : null}
-      <Chat />
     </div>
   );
 }

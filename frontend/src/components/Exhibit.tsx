@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Firebase, IPiece } from "../types";
+import { IPiece } from "../types";
 
-export default function Exhibit({ data }: Firebase<IPiece>) {
+export default function Exhibit(data: IPiece) {
   return data ? (
     <div className='flex flex-col w-full h-[60%]'>
       <motion.img src={data?.image_data} className='w-full h-full' />
