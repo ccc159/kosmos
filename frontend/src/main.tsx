@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import './index.css';
+import './index.scss';
 import Layout from './components/Layout';
 import './db';
 import { ChatRoom } from './components/ChatRoom';

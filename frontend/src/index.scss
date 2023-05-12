@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.piece-container {
+  column-count: 3;
+  column-gap: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .piece-container {
+    column-count: 2;
+  }
+}
