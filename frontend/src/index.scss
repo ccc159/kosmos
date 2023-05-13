@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container {
@@ -19,6 +19,7 @@ body {
 
 .piece-container {
   margin-top: 2rem;
+  padding: 1em;
   column-count: 3;
   column-gap: 1em;
 }
