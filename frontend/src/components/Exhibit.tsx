@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 import { IPiece } from "../interfaces/piece";
 
-const containerVariants = {
+const containerVariants: Variants = {
   initial: {
     position: "relative",
     height: "60vh",
@@ -12,7 +12,6 @@ const containerVariants = {
     paddingTop: 0,
     marginTop: 0,
     marginBottom: "7rem",
-    marginHorizontal: 0,
   },
   animate: {
     position: "fixed",

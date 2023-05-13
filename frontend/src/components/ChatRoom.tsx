@@ -6,10 +6,10 @@ import Exhibit from "./Exhibit";
 import { usePiece } from "../db";
 import CommentBox from "./CommentBox";
 
-const variants = {
-  initial: { paddingTop: 0 },
-  animate: { paddingTop: "50vh" },
-};
+// const variants = {
+//   initial: { paddingTop: 0 },
+//   animate: { paddingTop: "50vh" },
+// };
 
 export function ChatRoom() {
   const { id } = useParams();
