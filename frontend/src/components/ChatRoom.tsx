@@ -61,7 +61,7 @@ export function ChatRoom() {
         animate={extended ? 'initial' : 'animate'}
       >
         <Exhibit piece={piece} extended={extended} />
-        <CommentBox piece={piece} extended={extended} />
+        <CommentBox piece={piece} />
       </motion.div>
     </>
   );
