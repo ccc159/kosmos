@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { IComment } from '../interfaces/comment';
 import { IPiece } from '../interfaces/piece';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Overlay } from './Overlay';
 
 const variants = {
   open: { maxHeight: 1800 },
@@ -56,6 +57,7 @@ export default function CommentBox({ piece }: { piece: IPiece }) {
                     </h3>
                     {content && <p className='py-3' style={{ whiteSpace: 'pre-wrap', maxWidth: '100vw', overflow: 'hidden' }} children={content} />}
                   </div>
+                  {comments[cid].overlay_data && <Overlay comment={comments[cid]} piece={piece} />}
                   <ArrowButton
                     expanded={isSelected}
                     onClick={() => {
@@ -106,8 +108,9 @@ export default function CommentBox({ piece }: { piece: IPiece }) {
 
 function CommentInput({ value, onChange, dbPath }: { value?: string; onChange: (newValue: string) => void; dbPath: string }) {
   return (
-    <div className='flex gap-3'>
+    <div className='rounded-lg flex gap-3 p-2 bg-[#f3f4f6]'>
       <textarea className='rounded-md p-2 flex-1' value={value} onChange={(e) => onChange(e.target.value)} />
+
       <button
         className={`bg-gray-200 p-2 w-10 h-10 rounded-full stroke-black ${isEmpty(value) ? 'opacity-50' : 'opacity-100'}`}
         onClick={() => {
