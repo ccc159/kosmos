@@ -24,7 +24,7 @@ export default function CommentBox({ piece }: { piece: IPiece; extended: boolean
   }, [piece.id]);
 
   return (
-    <div className={`p-2`}>
+    <div className={`p-2 min-h-screen`}>
       {comments && (
         <div
           children={commentIds.map((cid, i) => {
