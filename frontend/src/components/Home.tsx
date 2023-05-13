@@ -35,6 +35,7 @@ const containerVariants: Variants = {
   },
 };
 
+
 export function Home() {
   const pieces = usePieces();
 

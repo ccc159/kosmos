@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { IComment } from '../interfaces/comment';
 import { IPiece } from '../interfaces/piece';
 
-export default function CommentBox({ piece }: { piece: IPiece }) {
+export default function CommentBox({ piece }: { piece: IPiece; extended: boolean }) {
   // from firebase
   const [comments, setComments] = useState<{ [key: string]: Partial<IComment> } | null>(null);
   const commentIds = keys(comments);
@@ -24,7 +24,7 @@ export default function CommentBox({ piece }: { piece: IPiece }) {
   }, [piece.id]);
 
   return (
-    <div className='p-2'>
+    <div className={`p-2`}>
       {comments && (
         <div
           children={commentIds.map((cid, i) => {
