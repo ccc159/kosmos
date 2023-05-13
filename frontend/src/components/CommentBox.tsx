@@ -5,6 +5,7 @@ import { IComment } from '../interfaces/comment';
 import { IPiece } from '../interfaces/piece';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Overlay } from './Overlay';
+import { IoMdArrowDown, IoMdArrowUp } from 'react-icons/io';
 
 const variants = {
   open: { maxHeight: 1800 },
@@ -132,21 +133,15 @@ function CommentInput({ value, onChange, dbPath }: { value?: string; onChange: (
 }
 
 function ArrowButton({ onClick, expanded }: { onClick: () => void; disabled?: boolean; expanded?: boolean }) {
+  const opacity = 1;
   return (
     <div
       onClick={() => {
         onClick();
       }}
+      style={{ position: 'relative', top: '-2px ' }}
     >
-      <svg
-        className={`stroke-black transition-transform w-6 origin-center	 ${expanded ? 'rotate-0 opacity-100' : 'rotate-180 opacity-50'}`}
-        fill='none'
-        stroke-width='3'
-        viewBox='0 0 24 24'
-        xmlns='http://www.w3.org/2000/svg'
-      >
-        <path stroke-linecap='round' stroke-linejoin='round' d='M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18'></path>
-      </svg>
+      {expanded ? <IoMdArrowDown size={25} style={{ opacity }} /> : <IoMdArrowUp size={25} style={{ opacity }} />}
     </div>
   );
 }
