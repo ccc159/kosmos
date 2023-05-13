@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-import Exhibit from "./Exhibit";
-import { usePiece } from "../db";
-import CommentBox from "./CommentBox";
+import Exhibit from './Exhibit';
+import { usePiece } from '../db';
+import CommentBox from './CommentBox';
 
 // const variants = {
 //   initial: { paddingTop: 0 },
@@ -24,9 +24,9 @@ export function ChatRoom() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -34,10 +34,7 @@ export function ChatRoom() {
   if (!piece) return <p>Piece not found</p>;
 
   return (
-    <motion.div
-      className='flex flex-col w-full h-full'
-      onScroll={() => setExtended(!extended)}
-    >
+    <motion.div className='flex flex-col w-full h-full' onScroll={() => setExtended(!extended)}>
       <Exhibit piece={piece} extended={extended} />
       {/* <button onClick={() => setExtended(!extended)}>EXTEND</button> */}
       {/* <motion.div
@@ -45,7 +42,7 @@ export function ChatRoom() {
         initial={extended ? "animate" : "initial"}
         animate={extended ? "initial" : "animate"}
       ></motion.div> */}
-      {!extended && <div className='flex w-screen h-[50vh] bg-white' />}
+      {!extended && <div className='flex w-screen bg-white' />}
       <CommentBox piece={piece} />
     </motion.div>
   );
