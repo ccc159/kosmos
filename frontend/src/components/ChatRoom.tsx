@@ -16,35 +16,53 @@ export function ChatRoom() {
   const timeoutRef = useRef<any>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setExtended(false);
-      } else {
-        setExtended(true);
-      }
-      setScrolling(true);
+      const handleScroll = () => {
+        setScrolling(true);
+  
+        // if it is scroll, clear the timeout and set a new one
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        // set scrolling to false after 1 second of no scrolling
+        timeoutRef.current = setTimeout(() => {
+          setScrolling(false);
+        }, 2000);
+      };
+  
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
-      // if it is scroll, clear the timeout and set a new one
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-      // set scrolling to false after 1 second of no scrolling
-      timeoutRef.current = setTimeout(() => {
-        setScrolling(false);
-      }, 2000);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 180) {
+  //       setExtended(false);
+  //     } else {
+  //       setExtended(true);
+  //     }
+  //     setScrolling(true);
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //     // if it is scroll, clear the timeout and set a new one
+  //     if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  //     // set scrolling to false after 1 second of no scrolling
+  //     timeoutRef.current = setTimeout(() => {
+  //       setScrolling(false);
+  //     }, 2000);
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll, { passive: true });
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   const piece = usePiece(id as string);
   if (!piece) return <p>Piece not found</p>;
 
-  const containerVariants = {
-    initial: { marginTop: 0 },
-    animate: { marginTop: '35vh' },
-  };
+  // const containerVariants = {
+  //   initial: { marginTop: 0 },
+  //   animate: { marginTop: '35vh' },
+  // };
 
   return (
     <>
@@ -53,16 +71,14 @@ export function ChatRoom() {
           <img src={settings} style={{ zIndex: 100 }} className='fixed top-0 right-0 w-8 m-2' />
         </Link>
       </motion.div>
-      <motion.div
-        className='flex flex-col w-screen z-0'
+      <div
+        className='flex flex-col z-0'
+        style={{minHeight: '150vh'}}
         onScroll={() => setExtended(!extended)}
-        variants={containerVariants}
-        initial={extended ? 'animate' : 'initial'}
-        animate={extended ? 'initial' : 'animate'}
       >
-        <Exhibit piece={piece} extended={extended} />
+        <Exhibit piece={piece} extended={extended} setExtended={setExtended} />
         <CommentBox piece={piece} />
-      </motion.div>
+      </div>
     </>
   );
 }
