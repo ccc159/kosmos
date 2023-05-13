@@ -129,9 +129,9 @@ export function SettingsPage() {
     0)
 
   return (
-    <section className='p-3 w-screen'>
+    <section className='p-3'>
       <img style={{ borderRadius: '5px', margin: 'auto' }} src={avatar} alt='avatar' />
-      <div>
+      <div className='mt-8'>
         <Title>Display Name</Title>
         <Description>From now on, you will be known as ... </Description>
         <Input
