@@ -5,6 +5,11 @@ import { IComment } from '../interfaces/comment';
 import { IPiece } from '../interfaces/piece';
 import { AnimatePresence, motion } from "framer-motion";
 
+const variants = {
+    open: { maxHeight: 1800 },
+    closed: { maxHeight: 86 },
+}
+
 export default function CommentBox({ piece }: { piece: IPiece }) {
     // from firebase
     const [comments, setComments] = useState<{ [key: string]: Partial<IComment> } | null>(null);
@@ -30,21 +35,22 @@ export default function CommentBox({ piece }: { piece: IPiece }) {
         <div>
             {
                 comments && (
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.6 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.3,
-                        ease: [0, 0.71, 0.2, 1.01]
-                    }}
+                <div
                     children={commentIds.map((cid, i) => {
                         const { author_display_name, content, inner_comments, level } = comments[cid];
                         const isSelected = cid === selectedCommentId;
                         const innerCommentKeys = keys(inner_comments);
-                        const backgroundColor = level === "curated_comment" ? '#FFDF37' : undefined
+                        const backgroundColor = level === "curated_comment" ? 'rgb(255, 223, 55)' : 'rgb(243 244 246)'
 
                         return (
-                            <div key={i} className='bg-gray-100 p-3 mb-3 rounded-lg' style={{ backgroundColor }}>
+                            <motion.div
+                                key={i}
+                                className='p-3 mb-3 rounded-lg overflow-hidden relative'
+                                style={{ backgroundColor }}
+                                animate={isSelected ? "open" : "closed"}
+                                variants={variants}
+                                transition={{duration: 0.3, ease: 'easeInOut'}}
+                            >
                                 <div className='flex'>
                                     <div className='flex-1'>
                                         <h3>
@@ -53,16 +59,7 @@ export default function CommentBox({ piece }: { piece: IPiece }) {
                                         </h3>
                                         {
                                             content &&
-                                            <motion.p
-                                                initial={{ height: '2em' }}
-                                                transition={{
-                                                    duration: 0.3
-                                                }}
-                                                animate={
-                                                    isSelected ?
-                                                    {height: 'auto'} :
-                                                    {height: '2em'}
-                                                }
+                                            <p
                                                 className='py-3'
                                                 style={{ whiteSpace: 'pre-wrap', maxWidth: '100vw', overflow: 'hidden' }}
                                                 children={content}
@@ -78,42 +75,43 @@ export default function CommentBox({ piece }: { piece: IPiece }) {
                                 </div>
                                 <AnimatePresence initial={false} />
                                 {
-                                    selectedCommentId === cid &&
-                                    <motion.div
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        transition={{
-                                            duration: 0.3,
-                                            ease: [0, 0.71, 0.2, 1.01]
-                                        }}
-                                    >
-                                        {
-                                            inner_comments &&
-                                            innerCommentKeys.map((icid) => (
-                                                <motion.div
-                                                    key={icid}
-                                                    className='bg-white mb-3 p-3 rounded-lg'
-                                                    initial={{ opacity: 0, scale: 0.8 }}
-                                                    animate={{ opacity: 1, scale: 1 }}
-                                                    transition={{
-                                                        duration: 0.3,
-                                                        ease: [0, 0.71, 0.2, 1.01]
-                                                    }}
-                                                >
-                                                    <h3 children={inner_comments[icid].author_display_name ?? 'unknown user'} />
-                                                    <p children={inner_comments[icid].content} />
-                                                </motion.div>
-                                            ))
-                                        }
-                                        <CommentInput
-                                            value={editorContent}
-                                            onChange={setEditorContent}
-                                            dbPath={`/pieces/${piece.id}/comments/${cid}/inner_comments`}
-                                        />
-                                    </motion.div>
+                                    inner_comments &&
+                                    innerCommentKeys.map((icid) => (
+                                        <motion.div
+                                            initial={{ opacity: 0, scale: 0.8 }}
+                                            animate={{ opacity: 1, scale: 1 }}
+                                            transition={{
+                                                duration: 0.3,
+                                                ease: [0, 0.71, 0.2, 1.01]
+                                            }}
+                                            key={icid}
+                                            className='bg-white mb-3 p-3 rounded-lg'
+                                        >
+                                            <h3 children={inner_comments[icid].author_display_name ?? 'unknown user'} />
+                                            <p children={inner_comments[icid].content} />
+                                        </motion.div>
+                                    ))
                                 }
-                                <AnimatePresence />
-                            </div>
+                                <CommentInput
+                                    value={editorContent}
+                                    onChange={setEditorContent}
+                                    dbPath={`/pieces/${piece.id}/comments/${cid}/inner_comments`}
+                                />
+                                <div
+                                    style={{
+                                        height: 30,
+                                        width: '100%',
+                                        position: 'absolute',
+                                        bottom: 0,
+                                        left: 0,
+                                        background: (
+                                            level === "curated_comment" ?
+                                            `linear-gradient(0deg, rgba(255, 223, 55, 1) 0%, rgba(255, 223, 55, 0) 90%)` :
+                                            `linear-gradient(0deg, rgba(243, 244, 246, 1) 0%, rgba(243, 244, 246, 0) 90%)`
+                                        )
+                                    }}
+                                />
+                            </motion.div>
                         );
                     })}
                 />
