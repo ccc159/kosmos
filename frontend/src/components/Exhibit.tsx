@@ -47,7 +47,7 @@ export default function Exhibit({ piece, extended, setExtended }: ExhibitProps) 
       </div>
     </motion.div>
     <motion.div
-      className='font-montserrat fixed z-50 p-3 gap-3 w-full'
+      className='font-montserrat fixed z-50 p-3 gap-3 w-full bg-white'
       animate={extended ? {opacity: 0} : {opacity:1}}
       transition={{duration: 0.3}}
     >
