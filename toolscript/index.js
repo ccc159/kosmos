@@ -1,5 +1,6 @@
 const { initializeApp } = require('firebase/app');
-const { getDatabase, onValue, push, ref, set } = require('firebase/database');
+const { getDatabase, onValue, push, ref, set, get, remove } = require('firebase/database');
+const { sample } = require('lodash');
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -18,6 +19,7 @@ const app = initializeApp(firebaseConfig);
 const piecesRef = ref(getDatabase(app), 'pieces');
 
 function popComments() {
+  const names = ['Klee', 'Kandinsky', 'Mondrian', 'Picasso', 'Matisse', 'Rothko', 'Pollock', 'Warhol'];
   const commenttemps = [
     'Tthe use of color in Dream City is really amazing. Klee was able to create a sense of vibrancy and energy through the colors he chose.',
     "I don't really see what all the fuss is about. The colors are too bright and the composition is too chaotic. I much prefer Klee's more subdued works.",
@@ -30,7 +32,10 @@ function popComments() {
     'It creates a sense of depth and mystery.',
     "The black is too dark and the composition is too chaotic. I much prefer Klee's more subdued works.",
   ];
-  onValue(piecesRef, (snapshot) => {
+
+  const levels = [null, 'curated_comment', null, null, null];
+
+  get(piecesRef).then((snapshot) => {
     const pieces = Object.values(snapshot.val());
 
     // choose random 7 comments for each piece
@@ -38,9 +43,15 @@ function popComments() {
     for (const piece of pieces) {
       console.log(i);
       i += 1;
-      // remove(ref(getDatabase(), `/pieces/${piece.id}/comments`));
+      remove(ref(getDatabase(), `/pieces/${piece.id}/comments`));
+
       for (const comment of commenttemps) {
-        push(ref(getDatabase(), `/pieces/${piece.id}/comments`), comment);
+        const name = sample(names);
+        push(ref(getDatabase(), `/pieces/${piece.id}/comments`), {
+          author_display_name: name,
+          content: comment,
+          level: sample(levels),
+        });
       }
     }
 
